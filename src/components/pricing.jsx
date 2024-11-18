@@ -13,7 +13,6 @@ const Pricing = () => {
                 <ul>
                     <li>3 page Custom website</li>
                     <li>Use your own domain name</li>
-                    <li>Booking system intergrated</li>
                     <li>Self hosting</li>
                     <li>SEO optimization</li>
                     <li>No weekly updates</li>
@@ -49,7 +48,7 @@ const Pricing = () => {
                     <li>Unlimited emails</li>
                     <li>Priority updates and maintenance</li>
                 </ul>
-                <h2>800$</h2><h6>+100$/month</h6>
+                <h2>1200$</h2><h6>+100$/month</h6>
             </div>
 
         </div>
