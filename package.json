@@ -1,5 +1,5 @@
 {
-  "name": "mativokyle",
+  "name": "beautech",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "build": "CI=false react-scripts build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "css-loader": "^7.1.2",
     "postcss-loader": "^8.1.1",
     "style-loader": "^4.0.0"
