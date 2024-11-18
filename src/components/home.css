@@ -1,0 +1,61 @@
+.Hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Hero-section h3 {
+    align-self: center;
+    font-size: 4rem; /* Added font-size for mobile responsiveness */
+}
+
+.box img {
+    width: 500px;
+    max-width: 100%; /* Ensures the image scales down on smaller screens */
+}
+
+.top-box {
+    margin: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .Hero-section h3 {
+        font-size: 3rem; /* Adjust heading size for tablets and smaller screens */
+    }
+
+    .box img {
+        width: 400px; /* Adjust the image size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .Hero-section {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+        padding: 10px;
+    }
+
+    .Hero-section h3 {
+        font-size: 2.5rem; /* Adjust heading size for smaller devices */
+    }
+
+    .box img {
+        width: 100%; /* Make the image responsive on smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .Hero-section h3 {
+        font-size: 1.8rem; /* Further reduce font size on very small screens */
+        text-align: center; /* Center-align text on small screens */
+    }
+
+    .box img {
+        width: 100%; /* Make the image fully responsive */
+    }
+
+    .top-box {
+        margin: 10px;
+    }
+}

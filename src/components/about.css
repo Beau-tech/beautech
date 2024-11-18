@@ -1,0 +1,186 @@
+.body-about {
+    padding: 40px;
+    align-items: center;
+    margin: 20px 40px;
+    height: 100%;
+}
+
+.body-about h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.body-about h4 {
+    margin: 20px;
+}
+
+.write-up {
+    display: flex;
+    padding: 40px 20px;
+}
+
+.write-up h4 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.About-box {
+    padding: 20px;
+}
+
+.About-box {
+    align-self: center;
+    line-height: 1.8;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.About-grid {
+    padding: 20px;
+    display: grid;
+    gap: 8px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.About-grid div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 8px;
+    text-align: center;
+    background-color: #78787812;
+    margin-top: 0;
+    bottom: 0;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.About-grid div.animate {
+    animation: fadeInUp 0.5s ease-in-out forwards; /* Trigger animation when 'animate' class is added */
+}
+
+.About-grid div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.About-grid div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.About-grid div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.About-grid div:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.About-grid div:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.About-grid div:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.About-grid div:hover {
+    background-color: #020d46;
+    color: #f8b235;
+    border: solid 0.5px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.About-grid img {
+    width: 100px;
+    padding: 20px;
+    color: black;
+    align-self: center;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .body-about h3 {
+        font-size: 2.5rem;
+    }
+
+    .About-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .About-grid div {
+        padding: 15px;
+    }
+
+    .About-grid img {
+        width: 90px;
+    }
+}
+
+@media (max-width: 800px) {
+    .body-about h3 {
+        font-size: 2rem;
+    }
+
+    .write-up {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .About-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .About-grid div {
+        padding: 15px;
+    }
+
+    .About-grid img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .body-about h3 {
+        font-size: 1.5rem;
+    }
+
+    .write-up {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+        word-spacing: 0.1px;
+    }
+
+    .body-about {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .About-grid {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .About-grid div {
+        padding: 10px;
+    }
+
+    .About-grid img {
+        width: 60px; /* Smaller image size on small screens */
+    }
+}

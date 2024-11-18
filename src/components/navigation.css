@@ -1,0 +1,28 @@
+.navigation{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+}
+.navigation ul{
+    display: flex;
+    padding: 8px 8px;
+    justify-content: space-around;
+}
+.navigation a{
+    text-decoration: none;
+}
+.navigation li{
+    list-style: none;
+    margin: 8px;
+    color: beige;
+}
+.outer-nav-div{
+    align-self: center;
+}
+.outer-nav-div:nth-child(2){
+    border: solid;
+}
